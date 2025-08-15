@@ -1,5 +1,4 @@
 # Challenge_Conversor_de_Monedas
-# Conversor de Monedas en Java
 
 **Archivo:** `Conversor.java`  
 **Clase principal:** `Conversor`  
