@@ -1,26 +1,34 @@
 # Challenge_Conversor_de_Monedas
-Conversor de Monedas en Java
+# Conversor de Monedas en Java
 
-Este es un conversor de monedas por consola, desarrollado en Java, que permite realizar conversiones rápidas entre distintas divisas latinoamericanas y el dólar estadounidense. El programa utiliza un menú interactivo para seleccionar el tipo de conversión y calcula el valor correspondiente con tasas de cambio predefinidas.
+**Archivo:** `Conversor.java`  
+**Clase principal:** `Conversor`  
 
-Funcionalidades
+Este proyecto es un **conversor de monedas por consola**, desarrollado en **Java**, que permite realizar conversiones rápidas entre el dólar estadounidense y monedas latinoamericanas. El usuario interactúa mediante un menú y puede realizar múltiples conversiones hasta que decida salir del programa.
 
-Interfaz por consola con menú de opciones.
+## Funcionalidades
+- Menú interactivo para seleccionar el tipo de conversión.
+- Conversión entre:
+  1. Dólar estadounidense (USD) ↔ Peso Argentino (ARS)  
+  2. Dólar estadounidense (USD) ↔ Real Brasileño (BRL)  
+  3. Dólar estadounidense (USD) ↔ Peso Colombiano (COP)  
+- Colores en la salida para una mejor visualización de resultados.
+- Tasas de cambio fijas y fáciles de modificar.
+- Permite realizar varias conversiones sin reiniciar el programa.
 
-Conversión entre:
+## Estructura del programa
 
-Dólar estadounidense (USD) ↔ Peso Argentino (ARS)
+**Clase `Conversor`**  
+Contiene el método `main` y seis métodos auxiliares para cada tipo de conversión.
 
-Dólar estadounidense (USD) ↔ Real Brasileño (BRL)
+**Métodos:**
+- `main(String[] args)` → Controla el flujo principal del programa, muestra el menú, recibe la opción del usuario y llama al método correspondiente.  
+- `convertirDolarAPesoArgentino(Scanner scan)` → Convierte dólares (USD) a pesos argentinos (ARS).  
+- `convetirPesoArgentinoaDolar(Scanner scan)` → Convierte pesos argentinos (ARS) a dólares (USD).  
+- `convertirDolaraRealBrasileno(Scanner scan)` → Convierte dólares (USD) a reales brasileños (BRL).  
+- `convertirRealBrasilenoaDolar(Scanner scan)` → Convierte reales brasileños (BRL) a dólares (USD).  
+- `convertirDolaraaPesoColombiano(Scanner scan)` → Convierte dólares (USD) a pesos colombianos (COP).  
+- `convertirPesoColombianoaDolar(Scanner scan)` → Convierte pesos colombianos (COP) a dólares (USD).  
 
-Dólar estadounidense (USD) ↔ Peso Colombiano (COP)
-
-Resultados mostrados con colores en consola para una mejor legibilidad.
-
-Tasas de cambio fijas definidas en el código (fáciles de modificar).
-
-Control de flujo mediante un bucle para realizar múltiples conversiones hasta que el usuario decida salir.
-
-Tecnologías utilizadas
-
-Lenguaje: Java
+## Tecnologías utilizadas
+- **Lenguaje:** Java y JDK 17  
